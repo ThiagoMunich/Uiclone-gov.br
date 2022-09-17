@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
+  overflow: hidden;
   background-color: #FFDFD3;
   font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
