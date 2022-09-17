@@ -1,5 +1,7 @@
-header {
+@import '../../App.css';
+
+/* header {
     background-color: blue;
     grid-area: header;
-    height: 15vh;
-}
+
+} */

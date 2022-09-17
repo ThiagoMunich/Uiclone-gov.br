@@ -1,21 +1,21 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 50fr 1fr;
-    grid-template-rows: 10vh 15vh 65vh 10vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 17vh 65vh 10vh;
     grid-template-areas: "header header header" 
     "section section section"
-    ". main ."
+    "main main main"
     "footer footer footer";
 }
 
-.teste:nth-child(-n+3){
+.teste{
     border-radius: 2px;
     transform: skew(-15deg);
     background-color: gold;
     height: 8px;
-    width: 120px;
+    width: 7rem;
     margin-right: auto;
-    margin-left: 4px;
+    padding: 4px;
 }
 
 header {
@@ -41,20 +41,37 @@ header img:nth-child(3) {
 }
 
 section {
+    color:#FFF;
     display: flex;
     flex-direction: column;
-    max-height: 15vh;
     padding-left: 16px;
-    background-color: blueviolet;
+    background-image: url('../public/assets/images/headerBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: section;
 }
 
-
-section h3,p {
-    color: '#FFF';
+section h3{
+    margin-top: 8px;
+    margin-bottom: 4px;
 }
 
+section button {
+    outline: 4px solid rgba(126, 126, 126, 0.3);
+    margin-top: auto;
+    margin-bottom: 4px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    color: blue;
+    width: 120px;
+    margin-left: auto;
+    background: #FFF;
+    border-radius: 16px;
+    margin-right: 16px;
 
+}
 
 main {
     background-color: brown;
@@ -63,6 +80,11 @@ main {
 
 
 footer {
-    background-color: red;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #FFF;
     grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

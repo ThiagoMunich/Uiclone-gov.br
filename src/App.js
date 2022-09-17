@@ -1,7 +1,9 @@
 import React from "react"
 
 import "./App.css"
-import { FaBell } from "react-icons/fa"
+import { FaEye, FaBell, FaWallet } from "react-icons/fa"
+import { MdHome, MdMenu } from "react-icons/md"
+import { IoWallet } from "react-icons/io5"
 
 function App() {
   return (
@@ -16,20 +18,85 @@ function App() {
         </header>
 
         <section>
-          <h3>Olá, Thiago</h3>
+          <h3>
+            Olá, <strong>Thiago</strong>
+          </h3>
+
           <p>
             SUA CONTA É NÍVEL <strong>OURO</strong>
           </p>
-          <div style={{ display: "flex", margin: 8 }}>
+
+          <div style={{ display: "flex", marginTop: 12 }}>
             <span className="teste"></span>
             <span className="teste"></span>
             <span className="teste"></span>
           </div>
+
+          <button>
+            <FaEye size={16} color="blue" />
+
+            <strong>VER NÍVEL</strong>
+          </button>
         </section>
 
         <main>main</main>
 
-        <footer>footer</footer>
+        <footer>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <MdHome size={26} color="blue" />
+            <p>Início</p>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <MdHome size={26} color="blue" />
+            <p>Dados</p>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <MdHome size={26} color="blue" />
+            <p>QR Code</p>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <IoWallet size={26} color="blue" />
+            <p>Carteira</p>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <MdMenu size={26} color="blue" />
+            <p>Menu</p>
+          </div>
+        </footer>
       </div>
     </>
   )
