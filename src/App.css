@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8vh 17vh 65vh 10vh;
+    grid-template-rows: 8vh 17vh 55vh 20vh;
     grid-template-areas: "header header header" 
     "section section section"
     "main main main"
