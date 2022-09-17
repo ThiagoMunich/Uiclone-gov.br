@@ -21,7 +21,7 @@ export default function Footer() {
 
       <div>
         <span className="qrCode">
-          <FaQrcode size={22} color="white" />
+          <FaQrcode size={22} color="white" className="icon" />
         </span>
         <p>QR Code</p>
       </div>

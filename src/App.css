@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8vh 17vh 55vh 20vh;
+    grid-template-rows: 8vh 15vh 60vh 10vh;
     grid-template-areas: "header header header" 
     "section section section"
     "main main main"
@@ -69,6 +69,8 @@ main {
 }
 
 main input {
+    font-size: 18px;
+    font-style: italic;
     margin-top: 8px;
     border: 2px solid;
     border-radius: 8px;
@@ -88,7 +90,6 @@ main div {
     display: flex;
     justify-content: flex-start;
 }
-
 
 main div p {
     color: navy;

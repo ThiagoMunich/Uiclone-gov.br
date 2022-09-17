@@ -21,7 +21,7 @@ function App() {
         </section>
 
         <main>
-          <input placeholder="Encontre serviços do Governo..." />
+          <input placeholder="Encontre serviços do Governo..." readOnly />
 
           <Services />
 
