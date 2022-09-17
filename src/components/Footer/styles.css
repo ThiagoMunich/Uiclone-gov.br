@@ -1,0 +1,9 @@
+.qrCode {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: green;
+}

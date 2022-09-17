@@ -1,0 +1,10 @@
+.currentLevel{
+    border-radius: 2px;
+    transform: skew(-15deg);
+    background-color: gold;
+    height: 8px;
+    width: 7rem;
+    margin-right: auto;
+    padding: 4px;
+    opacity: 0.8;
+}

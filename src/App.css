@@ -1,5 +1,4 @@
 .container {
-    max-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 8vh 17vh 65vh 10vh;
@@ -7,16 +6,6 @@
     "section section section"
     "main main main"
     "footer footer footer";
-}
-
-.teste{
-    border-radius: 2px;
-    transform: skew(-15deg);
-    background-color: gold;
-    height: 8px;
-    width: 7rem;
-    margin-right: auto;
-    padding: 4px;
 }
 
 header {
@@ -28,7 +17,7 @@ header {
 }
 
 header img:nth-child(1) {
-    width: 112px;
+    width: 80px;
     margin-left: 16px;
 }
 
@@ -64,21 +53,57 @@ section button {
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    height: 24px;
     color: blue;
     width: 120px;
     margin-left: auto;
     background: #FFF;
     border-radius: 16px;
     margin-right: 16px;
-
+    padding: 4px;
 }
 
 main {
-    background-color: brown;
+    padding: 12px;
     grid-area: main;
+    overflow: auto;
 }
 
+main input {
+    margin-top: 8px;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    height: 56px;
+    border-color: #7E7E7E;
+}
+
+main div p:first-child {
+    font-size: 22px;
+    font-weight: 700;
+    color: #525252;
+}
+
+main div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+main div p {
+    color: navy;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: 12px;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;   
+}
+
+main hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 
 footer {
     padding-left: 16px;
@@ -88,4 +113,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div p:nth-child(2){
+    color:#7E7E7E
 }
