@@ -1,4 +1,5 @@
 .container {
+    max-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 8vh 17vh 65vh 10vh;
