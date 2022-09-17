@@ -2,7 +2,7 @@ import React from "react"
 
 import "./styles.css"
 
-import { FaQrcode } from "react-icons/fa"
+import { FaLock, FaClipboardList } from "react-icons/fa"
 
 import { BiChevronRight } from "react-icons/bi"
 
@@ -17,7 +17,7 @@ export default function MyAccount() {
         <hr />
 
         <div>
-          <FaQrcode size={24} color="navy" />
+          <FaClipboardList size={24} color="navy" />
 
           <p>Dados pessoais</p>
 
@@ -27,7 +27,7 @@ export default function MyAccount() {
         <hr />
 
         <div>
-          <BsFillFilePersonFill size={24} color="navy" />
+          <FaLock size={24} color="navy" />
 
           <p>Privacidade</p>
 
