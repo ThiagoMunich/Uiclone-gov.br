@@ -8,3 +8,7 @@
     flex-direction: column;
     align-content: space-between;
 }
+
+.divider:last-child {
+    display: none;
+}

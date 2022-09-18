@@ -13,6 +13,30 @@ import {
 
 import { FaQrcode, FaFileSignature, FaSearch } from "react-icons/fa"
 
+const services = [
+  { name: "Buscar serviços", icon: <FaSearch size={24} color="navy" /> },
+  {
+    name: "Carteira de documentos",
+    icon: <IoWallet size={24} color="navy" />,
+  },
+  {
+    name: "Assinar documentos digitalmente",
+    icon: <FaFileSignature size={24} color="navy" />,
+  },
+  {
+    name: "Baixar certidões",
+    icon: <BsFileEarmarkArrowDownFill size={24} color="navy" />,
+  },
+  {
+    name: "Login sem senha (Qr code)",
+    icon: <FaQrcode size={24} color="navy" />,
+  },
+  {
+    name: "Prova de vida",
+    icon: <BsFillFilePersonFill size={24} color="navy" />,
+  },
+]
+
 export default function Services() {
   return (
     <>
@@ -21,63 +45,19 @@ export default function Services() {
 
         <hr />
 
-        <div>
-          <FaSearch size={24} color="navy" />
+        {services?.map((service) => (
+          <React.Fragment key={service.name}>
+            <div>
+              {service.icon}
 
-          <p>Buscar serviços</p>
+              <p>{service.name}</p>
 
-          <BiChevronRight size={24} color="navy" />
-        </div>
+              <BiChevronRight size={24} color="navy" />
+            </div>
 
-        <hr />
-
-        <div>
-          <IoWallet size={24} color="navy" />
-
-          <p>Carteira de documentos</p>
-
-          <BiChevronRight size={24} color="navy" />
-        </div>
-
-        <hr />
-
-        <div>
-          <FaFileSignature size={24} color="navy" />
-
-          <p>Assinar documentos digitalmente</p>
-
-          <BiChevronRight size={24} color="navy" />
-        </div>
-
-        <hr />
-
-        <div>
-          <BsFileEarmarkArrowDownFill size={24} color="navy" />
-
-          <p>Baixar certidões</p>
-
-          <BiChevronRight size={24} color="navy" />
-        </div>
-
-        <hr />
-
-        <div>
-          <FaQrcode size={24} color="navy" />
-
-          <p>Login sem senha (Qr code)</p>
-
-          <BiChevronRight size={24} color="navy" />
-        </div>
-
-        <hr />
-
-        <div>
-          <BsFillFilePersonFill size={24} color="navy" />
-
-          <p>Prova de vida</p>
-
-          <BiChevronRight size={24} color="navy" />
-        </div>
+            <hr className="divider" />
+          </React.Fragment>
+        ))}
       </div>
     </>
   )
