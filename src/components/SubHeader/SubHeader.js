@@ -15,7 +15,7 @@ export default function SubHeader() {
         SUA CONTA É NÍVEL <strong>OURO</strong>
       </p>
 
-      <div style={{ display: "flex", marginTop: 12 }}>
+      <div style={{ display: "flex", marginTop: 8 }}>
         <span className="currentLevel" />
         <span className="currentLevel" />
         <span className="currentLevel" />

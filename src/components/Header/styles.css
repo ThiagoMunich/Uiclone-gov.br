@@ -1,7 +1,21 @@
-@import '../../App.css';
+.bell {
+    animation: bellShake 1s infinite alternate;
+}
 
-/* header {
-    background-color: blue;
-    grid-area: header;
+.bellBadge {
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background-color: red;
+    transform: translateY(50%) translateX(-110%);
+}
 
-} */
+@keyframes bellShake {
+    from {
+        transform: rotate(-20deg)
+    }
+    to {
+        transform: rotate(20deg)
+    }
+}
