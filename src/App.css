@@ -11,6 +11,12 @@
   background-color: #e5e5e0;
 }
 
+@media (max-width: 420px) {
+  .container {
+    grid-template-rows: 7vh 17vh 59vh 17vh;
+  }
+}
+
 header {
   display: flex;
   grid-area: header;
@@ -81,6 +87,11 @@ main input {
   width: 100%;
   height: 56px;
   border-color: #7e7e7e;
+}
+
+main input:focus {
+  outline: none;
+  border-color: navy;
 }
 
 main div p:first-child {
