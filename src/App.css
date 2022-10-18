@@ -11,12 +11,6 @@
   background-color: #e5e5e0;
 }
 
-@media (max-width: 420px) {
-  .container {
-    grid-template-rows: 7vh 17vh 59vh 17vh;
-  }
-}
-
 header {
   display: flex;
   grid-area: header;
@@ -139,4 +133,15 @@ footer > div {
 
 footer div p:nth-child(2) {
   color: #7e7e7e;
+}
+
+@media (max-width: 420px) {
+  .container {
+    grid-template-rows: 7vh 17vh 59vh 17vh;
+  }
+
+  footer {
+    align-items: stretch;
+    padding-top: 8px;
+  }
 }
